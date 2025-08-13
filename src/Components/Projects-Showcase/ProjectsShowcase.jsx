@@ -2,56 +2,64 @@ import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
+import imag1 from "../../assets/Project/1.png";
+import imag2 from "../../assets/Project/2.png";
+import imag3 from "../../assets/Project/3.png";
+import imag4 from "../../assets/Project/4.png";
+import imag5 from "../../assets/Project/5.png";
+import imag6 from "../../assets/Project/6.png";
+
 const ProjectsShowcase = () => {
   const [showAll, setShowAll] = useState(false);
 
   const projectsData = [
     {
       id: 1,
-      title: "Nutra AI - Calorie Counter",
-      image: "https://i.ibb.co/XZmVZKjv/Nutra-AI-App003.jpg",
+      title: "Familiar Echo",
+      image: imag1,
       description:
-        "Track meals easily—just snap a photo for instant nutrition insights.",
-      link: "https://play.google.com/store/apps/details?id=com.nutraai.nutraai",
+        "Dive into an intuitive experience with Familiar Echo, featuring an app interface and sleek design for personalized connections. It's all about capturing those familiar voices with ease.",
+      link: "https://joshlong-hitano-39.netlify.app/",
     },
     {
       id: 2,
-      title: "Smarter Google Ads with AI",
-      image: "https://i.ibb.co/KpVT84tG/Ad-Vision-AI-Chatbot.jpg",
+      title: "Zeenatura",
+      image: imag2,
       description:
-        "Optimize campaigns fast with AI insights, support, and automation tools.n",
-      link: "http://72.167.224.36/home",
+        "Zeenatura is not just about skincare; it's a return to essentials, offering natural products rooted in authenticity and respect for nature. The website showcases beautifully crafted skincare with a focus on ingredients that genuinely benefit the skin.",
+      link: "https://techoneology.com/",
     },
     {
       id: 3,
-      title: "Smarter Math Help with AI",
-      image: "https://i.ibb.co/G4Z4FRfC/Math-Ai-chatbot.jpg",
+      title: "Teacher Comments Hub",
+      image: imag3,
       description:
-        "AI-powered math tutoring for fast, fun, and effective learning.",
-      link: "https://www.mathaidetectives.com/",
+        "Revolutionize feedback with Teacher Comments Hub. An intelligent comment generation system designed to help educators craft personalized, meaningful feedback tailored to student strengths, progress, and areas for improvement.",
+      link: "https://teachercommentshub.com/fr/landing",
     },
     {
       id: 4,
-      title: "AI Session Planner",
-      image: "https://i.ibb.co/SXBnqy8k/Ai-Finance-Hub-11.jpg",
-      description: "Plan sessions by sport, age, skill, theme—coach with ease.",
-      link: "https://play.google.com/store/apps/details?id=com.jvai.agcourt",
+      title: "Orani",
+      image: imag4,
+      description:
+        "Orani, the AI-powered virtual receptionist, brings smart and seamless technology to your fingertips, allowing businesses to manage communications efficiently with an intuitive interface and secure options.",
+      link: "https://ai-essay-revise.vercel.app/",
     },
     {
       id: 5,
-      title: "One AI Hub, Total Control",
-      image: "https://i.ibb.co/C5vq2mdG/Untitled-1.jpg",
+      title: "Technoeology",
+      image: imag5,
       description:
-        "Switch, search, and save across ChatGPT, Claude, and Gemini.",
-      link: "https://www.aitain.ai/",
+        "A digital space for influencers and creators, Technoeology helps businesses connect with the right digital creators for strategic partnerships, with easy-to-navigate tools for managing collaborations and analyzing success.",
+      link: "https://techoneology.com/",
     },
     {
       id: 6,
-      title: "Top AI Tools, Ranked",
-      image: "https://i.ibb.co/rRs6LD8P/Ai-Tain-00.jpg",
+      title: "Alamocity Pulse",
+      image: imag6,
       description:
-        "Quickly find the best AI for your needs—compare, choose, and boost your workflow.",
-      link: "https://www.choosethebest.ai/",
+        "Alamocity Pulse offers a luxury experience, sharing stories of excellence in air travel with JetStratix. Discover high-end travel tips, insights, and articles from the heart of luxury aviation.",
+      link: "https://nimble-gelato-2c1856.netlify.app/",
     },
   ];
 
@@ -62,7 +70,7 @@ const ProjectsShowcase = () => {
       id="portfolio"
       className="bg-gradient-to-br from-black via-gray-900 to-black"
     >
-      <div className="container mx-auto px-4 pt-20 pb-10 text-white">
+      <div className="max-w-7xl mx-auto px-4 pt-20 pb-10 text-white">
         <div className="text-center mb-12">
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -111,7 +119,7 @@ const ProjectsShowcase = () => {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-60 object-cover rounded-2xl transition-transform duration-500 hover:scale-105"
+                    className="w-full h-full object-cover rounded-2xl transition-transform duration-500 hover:scale-105"
                   />
                 </div>
 
